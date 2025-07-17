@@ -9,5 +9,6 @@ describe('favorite blog', () => {
   test('of a bigger list is found correctly', () => {
     const result = listHelper.favoriteBlog(blogs)
     assert.strictEqual(result, blogs[2])
+    console.log('Favorite blog:', result.title, 'by', result.author, 'with', result.likes, 'likes')
   })
 })
